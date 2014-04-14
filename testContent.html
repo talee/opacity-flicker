@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opacity Transition Test - Content</title>
+    <style>
+      .container {
+        display: inline-block;
+        height: 420px;
+        width: 230px;
+        padding: 30px;
+      }
+      .container:hover {
+        background-color: lightgray;
+      }
+      .container .content {
+        display: block;
+        height: 200px;
+        width: 200px;
+        opacity: .5;
+        transition: opacity .3s;
+      }
+      .container:hover .content {
+        opacity: 1;
+        transition: opacity .2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">Hover over me.</div>
+    </div>
+  </body>
+</html>
